@@ -1,0 +1,60 @@
+.introduction--section {
+  width: 100%;
+  height: 45%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.introduction--wrap {
+  width: 100%;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.introduction--title {
+  min-width: 1260px;
+  white-space: nowrap;
+  font-size: 7rem;
+  display: inline-block;
+  border-right: 3px solid black;
+  animation: blink .5s infinite, typing 2s steps(31) forwards;
+  width: 0;
+  overflow: hidden;
+}
+
+.introduction--description {
+  min-width: 340px;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  animation: blink .5s infinite, subtyping 2s steps(24) forwards;
+}
+
+
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  0%{
+    width: 0;
+  }
+  100% {
+    width: 1260px;
+  }
+}
+
+@keyframes subtyping {
+  0%{
+    width: 0;
+  }
+  100% {
+    width: 340px;
+  }
+}
+
